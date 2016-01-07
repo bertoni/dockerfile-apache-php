@@ -22,7 +22,7 @@ To construct the image
 
 To run the container
 
-    docker run -i -t --name app -p 80:80 -v <path_with_dumps>:/tmp/external -v <path_your_project1_in_your_machine>:/var/www/html/<name_your_project1> <name_of_your_choice>
+    docker run -i -t --name app -p 80:80 -v <path_with_conf>:/tmp/external -v <path_your_project1_in_your_machine>:/var/www/html/<name_your_project1> <name_of_your_choice>
 
 To exit of the container press Ctrl+p+q
 
