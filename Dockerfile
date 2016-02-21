@@ -9,7 +9,7 @@ RUN	echo "Starting..." \
 	&& chkconfig httpd on \
 	&& rpm -Uvh https://mirror.webtatic.com/yum/el6/latest.rpm \
 	&& yum -y install php56w \
-	&& yum -y install php56w-pear php56w-pecl-apcu php56w-cli php56w-pdo php56w-mysql php56w-pgsql php56w-pecl-memcache php56w-gd php56w-mbstring php56w-mcrypt php56w-xml \
+	&& yum -y install php56w-pear php56w-pecl-apcu php56w-cli php56w-pdo php56w-mysql php56w-pgsql php56w-pecl-memcache php56w-gd php56w-mbstring php56w-mcrypt php56w-xml php56w-pecl-xdebug \
 	&& echo 'date.timezone = "America/Sao_paulo"' > /etc/php.d/date.ini \
 	&& sed -i -e"s/^;date.timezone\s*=\s*/date.timezone = \"America\/Sao_paulo\"/" /etc/php.ini \
 	&& mkdir /opt/composer \
