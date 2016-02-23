@@ -5,7 +5,7 @@ MAINTAINER Arnaldo Bertoni Júnior <arnaldo.bertoni01@fatec.sp.gov.br>
 RUN	echo "Starting..." \
 	&& yum -y update \
 	&& yum -y install httpd \
-	&& /sbin/service httpd start
+	&& /sbin/service httpd start \
 	&& chkconfig httpd on \
 	&& rpm -Uvh https://mirror.webtatic.com/yum/el6/latest.rpm \
 	&& yum -y install php56w \
